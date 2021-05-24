@@ -1,0 +1,1697 @@
+<!--Web Design Home Page-->
+<!--Shiqi Cheng and Rohan Jain-->
+<!--Code is from our knowledge unless otherwise specified by comments, and images (other than our logo and favicon) are taken from public domain-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Stylesheet for social media icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+<title>Portfolio</title>
+<style>
+body{
+	font-family: Verdana,Geneva,sans-serif;
+	display:block;
+}
+fieldset{
+	display: block;
+  text-align:left;
+	 margin:auto;
+}
+h1{
+	color: #7fd4be;
+}
+input{
+	display:none;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+a:link {
+  color: #18302a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #18302a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7fd4be;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.container{
+	display:flex;
+	
+}
+.cover{
+	width: 400px;
+	height: 250px;
+	
+}
+
+.page-container{
+	width:400px;
+	heigth:250px;
+	position: relative;
+	perspective: 1500px;
+	
+}
+
+.page{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: .5s;
+	
+}
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+}
+.front{
+	background-color: white;
+	color:black;
+	box-sizing: border-box;
+	padding: 0 13px;
+}
+.back{
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	color:black;
+}
+
+.next-btn{
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+	cursor: pointer;
+}
+
+.back-btn{
+	position: absolute;
+	bottom: 13px;
+	left: 13px;
+	cursor: pointer;
+}
+#p1{
+	z-index: 6;
+}
+#p2{
+	z-index: 5;
+}
+#p3{
+	z-index: 4;
+}
+#p4{
+	z-index: 3;
+}
+#p5{
+	z-index: 2;
+}
+#p6{
+	z-index: 1;
+}
+#p7{
+	z-index: 12;
+}
+#p8{
+	z-index: 11;
+}
+#p9{
+	z-index: 10;
+}
+#p10{
+	z-index: 9;
+}
+#p11{
+	z-index: 8;
+}
+#p12{
+	z-index: 7;
+}
+#p13{
+        z-index: 18;
+}
+#p14{
+        z-index: 17;
+}
+#p15{
+        z-index: 16;
+}
+#p16{
+        z-index: 15;
+}
+#p17{
+        z-index: 14;
+}
+#p18{
+        z-index: 13;
+}
+#p19{
+        z-index: 24;
+}
+#p20{
+        z-index: 23;
+}
+#p21{
+        z-index: 22;
+}
+#p22{
+        z-index: 21;
+}
+#p23{
+        z-index: 20;
+}
+#p24{
+        z-index: 19;
+}
+#p25{
+        z-index: 30;
+}
+#p26{
+        z-index: 29;
+}
+#p27{
+        z-index: 28;
+}
+#p28{
+        z-index: 27;
+}
+#p29{
+        z-index: 26;
+}
+#p30{
+        z-index: 25;
+}
+#p31{
+        z-index: 36;
+}
+#p32{
+        z-index: 35;
+}
+#p33{
+        z-index: 34;
+}
+#p34{
+        z-index: 33;
+}
+#p35{
+        z-index: 32;
+}
+#p36{
+        z-index: 31;
+}
+#p37{
+        z-index: 42;
+}
+#p38{
+        z-index: 41;
+}
+#p39{
+        z-index: 40;
+}
+#p40{
+        z-index: 39;
+}
+#p41{
+        z-index: 38;
+}
+#p42{
+        z-index: 37;
+}
+#p43{
+        z-index: 48;
+}
+#p44{
+        z-index: 47;
+}
+#p45{
+        z-index: 46;
+}
+#p46{
+        z-index: 45;
+}
+#p47{
+        z-index: 44;
+}
+#p48{
+        z-index: 43;
+}
+#p49{
+        z-index: 54;
+}
+#p50{
+        z-index: 53;
+}
+#p51{
+        z-index: 52;
+}
+#p52{
+        z-index: 51;
+}
+#p53{
+        z-index: 50;
+}
+#p54{
+        z-index: 49;
+}
+#p55{
+        z-index: 60;
+}
+#p56{
+        z-index: 59;
+}
+#p57{
+        z-index: 58;
+}
+#p58{
+        z-index: 57;
+}
+#p59{
+        z-index: 56;
+}
+#p60{
+        z-index: 55;
+}
+#p61{
+        z-index: 66;
+}
+#p62{
+        z-index: 65;
+}
+#p63{
+        z-index: 64;
+}
+#p64{
+        z-index: 63;
+}
+#p65{
+        z-index: 62;
+}
+#p66{
+        z-index: 61;
+}
+#p67{
+        z-index: 72;
+}
+#p68{
+        z-index: 71;
+}
+#p69{
+        z-index: 70;
+}
+#p70{
+        z-index: 69;
+}
+#p71{
+        z-index: 68;
+}
+#p72{
+        z-index: 67;
+}
+#c1:checked ~ .page-container #p1{
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#c2:checked ~ .page-container #p2{
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#c3:checked ~ .page-container #p3{
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+#c4:checked ~ .page-container #p4{
+	transform: rotateY(-180deg);
+	z-index: 4;
+}
+#c5:checked ~ .page-container #p5{
+	transform: rotateY(-180deg);
+	z-index: 5;
+}
+#c6:checked ~ .page-container #p6{
+	transform: rotateY(-180deg);
+	z-index: 6;
+}
+#c7:checked ~ .page-container #p7{
+	transform: rotateY(-180deg);
+	z-index: 7;
+}
+#c8:checked ~ .page-container #p8{
+	transform: rotateY(-180deg);
+	z-index: 8;
+}
+#c9:checked ~ .page-container #p9{
+	transform: rotateY(-180deg);
+	z-index: 9;
+}
+#c10:checked ~ .page-container #p10{
+	transform: rotateY(-180deg);
+	z-index: 10;
+}
+#c11:checked ~ .page-container #p11{
+	transform: rotateY(-180deg);
+	z-index: 11;
+}
+#c12:checked ~ .page-container #p12{
+	transform: rotateY(-180deg);
+	z-index: 12;
+}
+#c13:checked ~ .page-container #p13{
+        transform:rotateY(-180deg);
+        z-index: 13;
+}
+#c14:checked ~ .page-container #p14{
+        transform:rotateY(-180deg);
+        z-index: 14;
+}
+#c15:checked ~ .page-container #p15{
+        transform:rotateY(-180deg);
+        z-index: 15;
+}
+#c16:checked ~ .page-container #p16{
+        transform:rotateY(-180deg);
+        z-index: 16;
+}
+#c17:checked ~ .page-container #p17{
+        transform:rotateY(-180deg);
+        z-index: 17;
+}
+#c18:checked ~ .page-container #p18{
+        transform:rotateY(-180deg);
+        z-index: 18;
+}
+#c19:checked ~ .page-container #p19{
+        transform:rotateY(-180deg);
+        z-index: 19;
+}
+#c20:checked ~ .page-container #p20{
+        transform:rotateY(-180deg);
+        z-index: 20;
+}
+#c21:checked ~ .page-container #p21{
+        transform:rotateY(-180deg);
+        z-index: 21;
+}
+#c22:checked ~ .page-container #p22{
+        transform:rotateY(-180deg);
+        z-index: 22;
+}
+#c23:checked ~ .page-container #p23{
+        transform:rotateY(-180deg);
+        z-index: 23;
+}
+#c24:checked ~ .page-container #p24{
+        transform:rotateY(-180deg);
+        z-index: 24;
+}
+#c25:checked ~ .page-container #p25{
+        transform:rotateY(-180deg);
+        z-index: 25;
+}
+#c26:checked ~ .page-container #p26{
+        transform:rotateY(-180deg);
+        z-index: 26;
+}
+#c27:checked ~ .page-container #p27{
+        transform:rotateY(-180deg);
+        z-index: 27;
+}
+#c28:checked ~ .page-container #p28{
+        transform:rotateY(-180deg);
+        z-index: 28;
+}
+#c29:checked ~ .page-container #p29{
+        transform:rotateY(-180deg);
+        z-index: 29;
+}
+#c30:checked ~ .page-container #p30{
+        transform:rotateY(-180deg);
+        z-index: 30;
+}
+#c31:checked ~ .page-container #p31{
+        transform:rotateY(-180deg);
+        z-index: 31;
+}
+#c32:checked ~ .page-container #p32{
+        transform:rotateY(-180deg);
+        z-index: 32;
+}
+#c33:checked ~ .page-container #p33{
+        transform:rotateY(-180deg);
+        z-index: 33;
+}
+#c34:checked ~ .page-container #p34{
+        transform:rotateY(-180deg);
+        z-index: 34;
+}
+#c35:checked ~ .page-container #p35{
+        transform:rotateY(-180deg);
+        z-index: 35;
+}
+#c36:checked ~ .page-container #p36{
+        transform:rotateY(-180deg);
+        z-index: 36;
+}
+#c37:checked ~ .page-container #p37{
+        transform:rotateY(-180deg);
+        z-index: 37;
+}
+#c38:checked ~ .page-container #p38{
+        transform:rotateY(-180deg);
+        z-index: 38;
+}
+#c39:checked ~ .page-container #p39{
+        transform:rotateY(-180deg);
+        z-index: 39;
+}
+#c40:checked ~ .page-container #p40{
+        transform:rotateY(-180deg);
+        z-index: 40;
+}
+#c41:checked ~ .page-container #p41{
+        transform:rotateY(-180deg);
+        z-index: 41;
+}
+#c42:checked ~ .page-container #p42{
+        transform:rotateY(-180deg);
+        z-index: 42;
+}
+#c43:checked ~ .page-container #p43{
+        transform:rotateY(-180deg);
+        z-index: 43;
+}
+#c44:checked ~ .page-container #p44{
+        transform:rotateY(-180deg);
+        z-index: 44;
+}
+#c45:checked ~ .page-container #p45{
+        transform:rotateY(-180deg);
+        z-index: 45;
+}
+#c46:checked ~ .page-container #p46{
+        transform:rotateY(-180deg);
+        z-index: 46;
+}
+#c47:checked ~ .page-container #p47{
+        transform:rotateY(-180deg);
+        z-index: 47;
+}
+#c48:checked ~ .page-container #p48{
+        transform:rotateY(-180deg);
+        z-index: 48;
+}
+#c49:checked ~ .page-container #p49{
+        transform:rotateY(-180deg);
+        z-index: 49;
+}
+#c50:checked ~ .page-container #p50{
+        transform:rotateY(-180deg);
+        z-index: 50;
+}
+#c51:checked ~ .page-container #p51{
+        transform:rotateY(-180deg);
+        z-index: 51;
+}
+#c52:checked ~ .page-container #p52{
+        transform:rotateY(-180deg);
+        z-index: 52;
+}
+#c53:checked ~ .page-container #p53{
+        transform:rotateY(-180deg);
+        z-index: 53;
+}
+#c54:checked ~ .page-container #p54{
+        transform:rotateY(-180deg);
+        z-index: 54;
+}
+#c55:checked ~ .page-container #p55{
+        transform:rotateY(-180deg);
+        z-index: 55;
+}
+#c56:checked ~ .page-container #p56{
+        transform:rotateY(-180deg);
+        z-index: 56;
+}
+#c57:checked ~ .page-container #p57{
+        transform:rotateY(-180deg);
+        z-index: 57;
+}
+#c58:checked ~ .page-container #p58{
+        transform:rotateY(-180deg);
+        z-index: 58;
+}
+#c59:checked ~ .page-container #p59{
+        transform:rotateY(-180deg);
+        z-index: 59;
+}
+#c60:checked ~ .page-container #p60{
+        transform:rotateY(-180deg);
+        z-index: 60;
+}
+#c61:checked ~ .page-container #p61{
+        transform:rotateY(-180deg);
+        z-index: 61;
+}
+#c62:checked ~ .page-container #p62{
+        transform:rotateY(-180deg);
+        z-index: 62;
+}
+#c63:checked ~ .page-container #p63{
+        transform:rotateY(-180deg);
+        z-index: 63;
+}
+#c64:checked ~ .page-container #p64{
+        transform:rotateY(-180deg);
+        z-index: 64;
+}
+#c65:checked ~ .page-container #p65{
+        transform:rotateY(-180deg);
+        z-index: 65;
+}
+#c66:checked ~ .page-container #p66{
+        transform:rotateY(-180deg);
+        z-index: 66;
+}
+#c67:checked ~ .page-container #p67{
+        transform:rotateY(-180deg);
+        z-index: 67;
+}
+#c68:checked ~ .page-container #p68{
+        transform:rotateY(-180deg);
+        z-index: 68;
+}
+#c69:checked ~ .page-container #p69{
+        transform:rotateY(-180deg);
+        z-index: 69;
+}
+#c70:checked ~ .page-container #p70{
+        transform:rotateY(-180deg);
+        z-index: 70;
+}
+#c71:checked ~ .page-container #p71{
+        transform:rotateY(-180deg);
+        z-index: 71;
+}
+#c72:checked ~ .page-container #p72{
+        transform:rotateY(-180deg);
+        z-index: 72;
+}
+#p6, #p12, #p18, #p24, #p30, #p36, #p42, #p48, #p54, #p60, #p66, #p72{
+	background-color:white;
+}
+
+.left {
+  left: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  float:left;
+}
+
+.right {
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+h1
+
+</style>
+</head>
+<body>
+<!--All images in fieldset are taken from the public domain-->
+<fieldset>
+  <legend><a href = "index.html"><img src = "logo.png" width="300" height="150"></img></a></legend>
+  <h1> Portfolio </h1>
+  <p>Enjoy some of my previous projects, I hope you like them! Come join me in these photoshoot experiences by making an <a href="schedule.html">appointment</a> with me or <a href="package.html">ordering</a> a photo package.</p>
+ <div class = "left">
+ <!-- odd numbered books-->
+  <!--book 1-->
+  <div class="container">
+	<input type = "checkbox" id="c1">
+	<input type = "checkbox" id="c2">
+	<input type = "checkbox" id="c3">
+	<input type = "checkbox" id="c4">
+	<input type = "checkbox" id="c5">
+	<input type = "checkbox" id="c6">
+	<div class="cover">
+		<img src = "https://experiencemiddlebury.com/wp-content/uploads/2020/12/fireworks_2021.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p1">
+			<div class = "back">
+				<img src="https://ei.marketwatch.com/Multimedia/2020/09/23/Photos/ZQ/MW-IP189_city_t_20200923173428_ZQ.jpg?uuid=8efd933e-fde4-11ea-9203-9c8e992d421e">
+				<label class = "back-btn" for="c1">Back</label>
+			</div>
+			<div class="front">
+				<h2>New Years Eve Photoshoot</h2>
+				<p>Photoshoot at the empty Times Square on New Years Eve.</p>
+				<label class="next-btn" for="c1">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p2">
+			<div class = "back">
+				<img src="https://cdn.abcotvs.com/dip/images/8961552_times-sq-2021.jpg?w=800&r=16%3A9">
+				<label class = "back-btn" for="c2">Back</label>
+			</div>
+			<div class="front">
+				<h2>NYC Streets</h2>
+				<p>Lacking people but still with all the lights, beauty, and excitement of New Years Eve.</p>
+				<label class="next-btn" for="c2">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p3">
+			<div class = "back">
+				<img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2c97c6e5-b2e5-4be3-9405-f53ba759cdd7/0302893e-ee3e-43eb-b2ac-c22add6df7a5/1280x720/match/image.jpg">
+				<label class = "back-btn" for="c3">Back</label>
+			</div>
+			<div class="front">
+				<h2>2021 Numerals</h2>
+				<p>The Numbers are ready for the New Year!</p>
+				<label class="next-btn" for="c3">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p4">
+			<div class = "back">
+				<img src="https://cloudfront-us-east-1.images.arcpublishing.com/advancelocal/HSKHS2I6GFEUTJXRZFEJVMMZ2U.jpg">
+				<label class = "back-btn" for="c4">Back</label>
+			</div>
+			<div class="front">
+				<h2>New York Streets</h2>
+				<p>Drone Images of New York Streets on New Years Eve</p>
+				<label class="next-btn" for="c4">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p5">
+			<div class = "back">
+				<img src="https://cms.prod.nypr.digital/images/316225/fill-1200x650/">
+				<label class = "back-btn" for="c5">Back</label>
+			</div>
+			<div class="front">
+				<h2>2021 Ball</h2>
+				<p>New Year's Eve Ball Drop</p>
+				<label class="next-btn" for="c5">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p6">
+			<div class = "back">
+				<h2>2021 New Years Eve End</h2>
+				<label class = "back-btn" for="c6">Back</label>
+			</div>
+			<div class="front">
+				<h2>The Ball...Again</h2>
+				<p>A different angle of the beautiful 2021 ball.</p>
+				<label class="next-btn" for="c6">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  
+  <!--book 3-->
+  <div class="container">
+	<input type = "checkbox" id="c13">
+	<input type = "checkbox" id="c14">
+	<input type = "checkbox" id="c15">
+	<input type = "checkbox" id="c16">
+	<input type = "checkbox" id="c17">
+	<input type = "checkbox" id="c18">
+	<div class="cover">
+		<img src = "https://i.pinimg.com/originals/b8/81/26/b88126dfe91ea8ea48f5bdf28462681d.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p13">
+			<div class = "back">
+				<img src="https://i.pinimg.com/originals/8b/86/7e/8b867e68987eac7454905769d6bbe0a5.jpg">
+				<label class = "back-btn" for="c13">Back</label>
+			</div>
+			<div class="front">
+				<h2>The Connor Family</h2>
+				<p>A photoshoot with the Connor Family throughout the years.</p>
+				<label class="next-btn" for="c13">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p14">
+			<div class = "back">
+				<img src="https://i0.wp.com/thismamaloveslife.com/wp-content/uploads/2017/11/CandiceMarkMaternity-54-1.jpg?fit=2048%2C1365&ssl=1">
+				<label class = "back-btn" for="c14">Back</label>
+			</div>
+			<div class="front">
+				<h2>2010</h2>
+				<p>Baby Mikey and his parents</p>
+				<label class="next-btn" for="c14">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p15">
+			<div class = "back">
+				<img src="https://i.pinimg.com/originals/60/ea/f1/60eaf1729c7d2d577ca2b589b96d5feb.jpg">
+				<label class = "back-btn" for="c15">Back</label>
+			</div>
+			<div class="front">
+				<h2>2009</h2>
+				<p>Before Mikey</p>
+				<label class="next-btn" for="c15">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p16">
+			<div class = "back">
+				<img src="https://images-pw.pixieset.com/elementfield/13934703/Alisha_and_Ben-143-b2e71262.jpg">
+				<label class = "back-btn" for="c16">Back</label>
+			</div>
+			<div class="front">
+				<h2>2013</h2>
+				<p>Mikey and his new baby sister Maddie</p>
+				<label class="next-btn" for="c16">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p17">
+			<div class = "back">
+				<img src="https://harvardhomemaker.shareist.com/uploads/ed4835b6161c503a2543eb4f4fa065d5_36522_l.jpg">
+				<label class = "back-btn" for="c17">Back</label>
+			</div>
+			<div class="front">
+				<h2>2014</h2>
+				<p>Playful Picture of the Connor Family</p>
+				<label class="next-btn" for="c17">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p18">
+			<div class = "back">
+				<h2>The Connor Family End </h2>
+				<label class = "back-btn" for="c18">Back</label>
+			</div>
+			<div class="front">
+				<h2>2015</h2>
+				<p>Beautiful Picture of the entire Connor Family</p>
+				<label class="next-btn" for="c18">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 5-->
+  <div class="container">
+	<input type = "checkbox" id = "c25">
+	<input type = "checkbox" id = "c26">
+	<input type = "checkbox" id = "c27">
+	<input type = "checkbox" id = "c28">
+	<input type = "checkbox" id = "c29">
+	<input type = "checkbox" id = "c30">
+	<div class="cover">
+		<img src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131616.jpg?crop=0.630xw:1.00xh;0.186xw,0&resize=640:*">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p25">
+			<div class = "back">
+				<img src="https://cdn.britannica.com/84/73184-004-E5A450B5/Sunflower-field-Fargo-North-Dakota.jpg">
+				<label class = "back-btn" for="c25">Back</label>
+			</div>
+			<div class="front">
+				<h2>Flowers</h2>
+				<p>The Spring Flowers of 2020</p>
+				<label class="next-btn" for="c25">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p26">
+			<div class = "back">
+				<img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg">
+				<label class = "back-btn" for="c26">Back</label>
+			</div>
+			<div class="front">
+				<h2>Sunflowers</h2>
+				<p>Beautiful yellow flowers all facing the same way</p>
+				<label class="next-btn" for="c26">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p27">
+			<div class = "back">
+				<img src="https://thumbs.dreamstime.com/b/spring-flowers-blue-crocuses-drops-water-backgro-background-tracks-rain-113784722.jpg">
+				<label class = "back-btn" for="c27">Back</label>
+			</div>
+			<div class="front">
+				<h2>Daisy</h2>
+				<p>Lone Daisy with beautiful background</p>
+				<label class="next-btn" for="c27">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p28">
+			<div class = "back">
+				<img src="https://www.thoughtco.com/thmb/mik7Z00SAYN786BQbieXWOzZmc8=/2121x1414/filters:fill(auto,1)/lotus-flower-828457262-5c6334b646e0fb0001dcd75a.jpg">
+				<label class = "back-btn" for="c28">Back</label>
+			</div>
+			<div class="front">
+				<h2>Purple Flowers</h2>
+				<p>Blooming purple flowers in the rain</p>
+				<label class="next-btn" for="c28">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p29">
+			<div class = "back">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg">
+				<label class = "back-btn" for="c29">Back</label>
+			</div>
+			<div class="front">
+				<h2>Lotus Flower</h2>
+				<p>A beautiful pink lotus flower resting on the surface of the water</p>
+				<label class="next-btn" for="c29">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p30">
+			<div class = "back">
+				<h2>The Spring Flowers of 2020 End </h2>
+				<label class = "back-btn" for="c30">Back</label>
+			</div>
+			<div class="front">
+				<h2>Blue Flower</h2>
+				<p>A rare blue flower</p>
+				<label class="next-btn" for="c30">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 7-->
+  <div class="container">
+	<input type = "checkbox" id = "c37">
+	<input type = "checkbox" id = "c38">
+	<input type = "checkbox" id = "c39">
+	<input type = "checkbox" id = "c40">
+	<input type = "checkbox" id = "c41">
+	<input type = "checkbox" id = "c42">
+	<div class="cover">
+		<img src = "https://adventures.com/media/3515/polar-bear-canada-cruise-tour.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p37">
+			<div class = "back">
+				<img src="https://www.deccanherald.com/sites/dh/files/articleimages/2020/08/18/316717-01-02-1597767959.jpg">
+				<label class = "back-btn" for="c37">Back</label>
+			</div>
+			<div class="front">
+				<h2>Winter</h2>
+				<p>Winter in the Arctic</p>
+				<label class="next-btn" for="c37">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p38">
+			<div class = "back">
+				<img src="https://cdn.vox-cdn.com/thumbor/c7Pf47OCZBhQA7OJ2Z3FPhsZ2r4=/902x93:4610x3056/1200x800/filters:focal(1347x1311:2147x2111)/cdn.vox-cdn.com/uploads/chorus_image/image/59038525/GettyImages_498047592.0.jpg">
+				<label class = "back-btn" for="c38">Back</label>
+			</div>
+			<div class="front">
+				<h2>Polar Bears</h2>
+				<p>Family of Polar Bears</p>
+				<label class="next-btn" for="c38">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p39">
+			<div class = "back">
+				<img src="https://network.bellona.org/content/uploads/sites/3/2020/01/climate-change-ice-melt-1024x683.jpg">
+				<label class = "back-btn" for="c39">Back</label>
+			</div>
+			<div class="front">
+				<h2>Polar Bear</h2>
+				<p>Polar Bear next to melting ice due to global warming</p>
+				<label class="next-btn" for="c39">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p40">
+			<div class = "back">
+				<img src="https://images.theconversation.com/files/360342/original/file-20200928-22-p7w75v.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop">
+				<label class = "back-btn" for="c40">Back</label>
+			</div>
+			<div class="front">
+				<h2>Melting Ice</h2>
+				<p>Sad reality of an ice-free Arctic</p>
+				<label class="next-btn" for="c40">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p41">
+			<div class = "back">
+				<img src="https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1555290916/shape/mentalfloss/istock-481931116.jpg?itok=t8eW1e4_">
+				<label class = "back-btn" for="c41">Back</label>
+			</div>
+			<div class="front">
+				<h2>Ice</h2>
+				<p>Single Chunk of Ice in the waters</p>
+				<label class="next-btn" for="c41">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p42">
+			<div class = "back">
+				<h2>Winter End </h2>
+				<label class = "back-btn" for="c42">Back</label>
+			</div>
+			<div class="front">
+				<h2>Aurora Lights</h2>
+				<p>Beautiful Aurora Lights</p>
+				<label class="next-btn" for="c42">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 9-->
+  <div class="container">
+	<input type = "checkbox" id = "c49">
+	<input type = "checkbox" id = "c50">
+	<input type = "checkbox" id = "c51">
+	<input type = "checkbox" id = "c52">
+	<input type = "checkbox" id = "c53">
+	<input type = "checkbox" id = "c54">
+	<div class="cover">
+		<img src = "https://daisybeattyphotography.com/wp-content/uploads/2015/09/15-1790-post/head-shots-for-kids-new-york-daisy-beatty-859x1024(pp_w768_h915).jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p49">
+			<div class = "back">
+				<img src="https://format-com-cld-res.cloudinary.com/image/private/s--URZGJdLa--/c_limit,g_center,h_700,w_65535/fl_keep_iptc.progressive,q_95/v1/e26d70e72de212a3b30774f920fbc35a/B-5839_web.jpg">
+				<label class = "back-btn" for="c49">Back</label>
+			</div>
+			<div class="front">
+				<h2>Kid Photoshoots</h2>
+				<p>Headshots of adorable children that I've worked with</p>
+				<label class="next-btn" for="c49">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p50">
+			<div class = "back">
+				<img src="https://eldeenannette.files.wordpress.com/2018/04/dsc_4001.jpg?w=980&h=980&crop=1">
+				<label class = "back-btn" for="c50">Back</label>
+			</div>
+			<div class="front">
+				<h2>Zyler</h2>
+				<p>Eight year old Zyler</p>
+				<label class="next-btn" for="c50">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p51">
+			<div class = "back">
+				<img src="https://images.squarespace-cdn.com/content/v1/53285d5fe4b0790f5a8ccd83/1579106010701-WJKL98G7X5PMFED6146Q/ke17ZwdGBToddI8pDm48kGh1VBOTYBMFp8BsZbSZPm17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmHy9fWX2TbgcwCD5LYAWJ6Q4Eni-3f0eHSHa6nBUBOh2abGK2vFbvrovWChKztO0G/shoot-me-now-young-actor-headshot">
+				<label class = "back-btn" for="c51">Back</label>
+			</div>
+			<div class="front">
+				<h2>Emily</h2>
+				<p>Sixteen Year Old Emily</p>
+				<label class="next-btn" for="c51">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p52">
+			<div class = "back">
+				<img src="https://jasonwaitephotography-blog.com/wp-content/uploads/2018/07/whs-992.jpg">
+				<label class = "back-btn" for="c52">Back</label>
+			</div>
+			<div class="front">
+				<h2>Logan</h2>
+				<p>Fourteen Year Old Logan</p>
+				<label class="next-btn" for="c52">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p53">
+			<div class = "back">
+				<img src="https://www.definingimagery.com/2019/images/best-headshot-photographers/actors-headshots-images/G_MG_2250_Leanne9HS_web_childrens_acting_headshots.jpg">
+				<label class = "back-btn" for="c53">Back</label>
+			</div>
+			<div class="front">
+				<h2>Jason</h2>
+				<p>Eleven Year Old Jason</p>
+				<label class="next-btn" for="c53">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p54">
+			<div class = "back">
+				<h2>Kid Photoshoots End </h2>
+				<label class = "back-btn" for="c54">Back</label>
+			</div>
+			<div class="front">
+				<h2>Alexa</h2>
+				<p>Six Year Old Alexa</p>
+				<label class="next-btn" for="c54">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  
+  <!--book 11-->
+  <div class="container">
+	<input type = "checkbox" id = "c61">
+	<input type = "checkbox" id = "c62">
+	<input type = "checkbox" id = "c63">
+	<input type = "checkbox" id = "c64">
+	<input type = "checkbox" id = "c65">
+	<input type = "checkbox" id = "c66">
+	<div class="cover">
+		<img src = "https://i.guim.co.uk/img/media/21cf752c2469739f05db401e36e3c08fbfcb7c52/0_271_4000_2399/master/4000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7de9aa5231613602e57c86eb98a5ddb1">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p61">
+			<div class = "back">
+				<img src="https://cdn0.weddingwire.com/articles/images/9/8/7/6/img_6789/r10_2x_s-wedding-day-timeline-kimberly-mufferi-photography.jpg">
+				<label class = "back-btn" for="c61">Back</label>
+			</div>
+			<div class="front">
+				<h2>Wedding Pictures</h2>
+				<p>Beautiful pictures of true love</p>
+				<label class="next-btn" for="c61">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p62">
+			<div class = "back">
+				<img src="https://discoverfarmersbranch.com/wp-content/uploads/Fondon-Wedding_Farmers-Branch_025_a-500x500.jpg">
+				<label class = "back-btn" for="c62">Back</label>
+			</div>
+			<div class="front">
+				<h2>Mr. and Mrs. Lake</h2>
+				<p></p>
+				<label class="next-btn" for="c62">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p63">
+			<div class = "back">
+				<img src="https://www.bostonmagazine.com/wp-content/uploads/sites/2/2020/06/black-wedding-vendors-photography.jpg">
+				<label class = "back-btn" for="c63">Back</label>
+			</div>
+			<div class="front">
+				<h2>Mr. and Mrs. Peabody</h2>
+				<p></p>
+				<label class="next-btn" for="c63">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p64">
+			<div class = "back">
+				<img src="https://www.wedgewoodweddings.com/hs-fs/hubfs/2020-WW-Gallery/Boulder-Creek/1-Boulder%20Creek%20by%20Wedgewood%20Weddings%20Couple%20on%20a%20boulder.png">
+				<label class = "back-btn" for="c64">Back</label>
+			</div>
+			<div class="front">
+				<h2>Mr. and Mrs. Peters</h2>
+				<p></p>
+				<label class="next-btn" for="c64">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p65">
+			<div class = "back">
+				<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/melissamarshall-johnnydevon169-1574195943.jpeg?crop=1.00xw:0.503xh;0,0.480xh&resize=640:*">
+				<label class = "back-btn" for="c65">Back</label>
+			</div>
+			<div class="front">
+				<h2>Mr. and Mrs. Brown</h2>
+				<p>heres a random portrait idk</p>
+				<label class="next-btn" for="c65">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p66">
+			<div class = "back">
+				<h2>Wedding Pictures End </h2>
+				<label class = "back-btn" for="c66">Back</label>
+			</div>
+			<div class="front">
+				<h2>Mr. and Mrs. White</h2>
+				<p></p>
+				<label class="next-btn" for="c66">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  </div>
+  <div class = "right">
+  <!-- even numbered books-->
+  <!--book 2-->
+  <div class="container">
+	<input type = "checkbox" id="c7">
+	<input type = "checkbox" id="c8">
+	<input type = "checkbox" id="c9">
+	<input type = "checkbox" id="c10">
+	<input type = "checkbox" id="c11">
+	<input type = "checkbox" id="c12">
+	<div class="cover">
+		<img src = "wedding.png">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p7">
+			<div class = "back">
+				<img src="family.png">
+				<label class = "back-btn" for="c7">Back</label>
+			</div>
+			<div class="front">
+				<h2>Best of My Best</h2>
+				<p>Here are the best photos that demonstrate the different packages nicely.</p>
+				<label class="next-btn" for="c7">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p8">
+			<div class = "back">
+				<img src="holiday.png">
+				<label class = "back-btn" for="c8">Back</label>
+			</div>
+			<div class="front">
+				<h2>Family</h2>
+				<p>Picture on Riley Family </p>
+				<label class="next-btn" for="c8">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p9">
+			<div class = "back">
+				<img src="maternity.png">
+				<label class = "back-btn" for="c9">Back</label>
+			</div>
+			<div class="front">
+				<h2>Holiday</h2>
+				<p>Toasty and Warm Holidays</p>
+				<label class="next-btn" for="c9">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p10">
+			<div class = "back">
+				<img src="portrait.png">
+				<label class = "back-btn" for="c10">Back</label>
+			</div>
+			<div class="front">
+				<h2>Maternity</h2>
+				<p>The Joy of Bringing Life to the World</p>
+				<label class="next-btn" for="c10">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p11">
+			<div class = "back">
+				<img src="landscape.png">
+				<label class = "back-btn" for="c11">Back</label>
+			</div>
+			<div class="front">
+				<h2>Portrait</h2>
+				<p>Beautiful Headshots</p>
+				<label class="next-btn" for="c11">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p12">
+			<div class = "back">
+				<h2> End </h2>
+				<label class = "back-btn" for="c12">Back</label>
+			</div>
+			<div class="front">
+				<h2>Landscape</h2>
+				<p>The sky, sun, and everything around us</p>
+				<label class="next-btn" for="c12">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 4-->
+  <div class="container">
+	<input type = "checkbox" id = "c19">
+	<input type = "checkbox" id = "c20">
+	<input type = "checkbox" id = "c21">
+	<input type = "checkbox" id = "c22">
+	<input type = "checkbox" id = "c23">
+	<input type = "checkbox" id = "c24">
+	<div class="cover">
+		<img src = "https://cdn.lynda.com/course/435447/435447-637286183793943692-16x9.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p19">
+			<div class = "back">
+				<img src="https://lh3.googleusercontent.com/proxy/heoi_7tej8d-HsqGnBiPM6CFCTtLOoQXatZN-aIm-NJmkc82DA5-JESLSAUzOMZ4pg3i9Pa0yu_SAJyoOXK9AGTJ6UlSWWJf9r6qX4pzbgLP0uli">
+				<label class = "back-btn" for="c19">Back</label>
+			</div>
+			<div class="front">
+				<h2>Objects</h2>
+				<p>Unique photos of objects</p>
+				<label class="next-btn" for="c19">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p20">
+			<div class = "back">
+				<img src="https://images.pexels.com/photos/226587/pexels-photo-226587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+				<label class = "back-btn" for="c20">Back</label>
+			</div>
+			<div class="front">
+				<h2>Peppers</h2>
+				<p>Red, Yellow, and Green Peppers</p>
+				<label class="next-btn" for="c20">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p21">
+			<div class = "back">
+				<img src="https://lh3.googleusercontent.com/proxy/ITH5nFcI0nidun96nzf70NrVtYpE8ojtLKbff6__V5MCpvDO4wNmycQ4nlGpp5dgM0yDcsFmnxCvAmF-SKkBBBu-WvPpxkGcX3LxzQSBGgmuG4ZnUkn6">
+				<label class = "back-btn" for="c21">Back</label>
+			</div>
+			<div class="front">
+				<h2>Ball</h2>
+				<p>A flourescent tennis ball</p>
+				<label class="next-btn" for="c21">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p22">
+			<div class = "back">
+				<img src="https://media.istockphoto.com/photos/birthday-cake-with-one-red-candle-picture-id1093554142?k=6&m=1093554142&s=612x612&w=0&h=qi-0TlbCOuPci0q5WtlWP9uRZyKQA4IiUR7gRIVL11Y=">
+				<label class = "back-btn" for="c22">Back</label>
+			</div>
+			<div class="front">
+				<h2>Lamp</h2>
+				<p>Beautiful Light Giving Object</p>
+				<label class="next-btn" for="c22">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p23">
+			<div class = "back">
+				<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExIVFRUWFRcVFxUYGRgXFhgVFhcWFhcWExYZHSggGBolGxUXITEhJykrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDysZFRkrLTcrLTctKysrKystKystLSsrKzctLSsrLSsrLSsrKys3KysrKysrKysrKysrLTcrK//AABEIALEBHAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQIDBAYHAQj/xABCEAACAQIDBQQIBAMGBgMAAAABAgADEQQhMQUGEkFRE2FxgQciQpGhscHRFDJSYjOS8BZygrLh8RUjU1TC0hckQ//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/AO4xEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARPCZafEqOcC9MbGYgoaeVw1QI3cGBsR/i4R5zw45OsxtoMtVCnaBM1YNqQVYMNe8QJOJaR76Mp8P9541YDVlEC9EwH2nTGtRZbO2qf6hAk4kZ/wAbp9ZUu2aXWBIxMaltCk2jr77TIVgdCDA9iIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICUuwAuZVNV343gGHpHhzdjwU1/VUPM/tXU+ECO3u3wNJuxogPV5g/lQHQvbUnkus0feTFYtERquJfick9mvqgKLXvbvIFpI7sbPLMa7nisxJY+1UOrHuH26TWd8cf2td+E3VPUXoSMrjxYmEe7u7NqYtzeo4GZ4uJjYDLrmSZMbQ2QMKATj6qMdFXjOXWwbTvlzc/G0KFNlZiHJA0JuoAtp3kyH3rxQqYlmU3WyhciMgouLHvvAmtnbwY2kDUDLi6Kn1yBw1UHfkCPMEd8lNpVfxdH8Thar3H5kGptqCDo46c/dNP3c2oMO7uTrTZQNQWy4b9w1lzYu2hhsTxg2o1DaoPlUHeD8L90DKVywB7WowP7iJcR1FuJ3z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">
+				<label class = "back-btn" for="c23">Back</label>
+			</div>
+			<div class="front">
+				<h2>Birthday</h2>
+				<p>The first of so many more</p>
+				<label class="next-btn" for="c23">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p24">
+			<div class = "back">
+				<h2>Objects End </h2>
+				<label class = "back-btn" for="c24">Back</label>
+			</div>
+			<div class="front">
+				<h2>Car</h2>
+				<p>White Toy Car</p>
+				<label class="next-btn" for="c24">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 6-->
+  <div class="container">
+	<input type = "checkbox" id = "c31">
+	<input type = "checkbox" id = "c32">
+	<input type = "checkbox" id = "c33">
+	<input type = "checkbox" id = "c34">
+	<input type = "checkbox" id = "c35">
+	<input type = "checkbox" id = "c36">
+	<div class="cover">
+		<img src = "https://www.ericalynnphotography.com/blog/wp-content/uploads/2013/07/2013BKS-110.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p31">
+			<div class = "back">
+				<img src="https://traviscurry.files.wordpress.com/2013/09/kids-dance-photographer-maryland-travis-curry10.jpg">
+				<label class = "back-btn" for="c31">Back</label>
+			</div>
+			<div class="front">
+				<h2>Dance Photography</h2>
+				<p>Cute Kids in Elaborate Costumes</p>
+				<label class="next-btn" for="c31">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p32">
+			<div class = "back">
+				<img src="https://i.chzbgr.com/original/3724037/h6CA69911/photographer-captures-amazing-photos-of-kids-dancing-in-public-places">
+				<label class = "back-btn" for="c32">Back</label>
+			</div>
+			<div class="front">
+				<h2>Leap</h2>
+				<p>Into the Wilderness</p>
+				<label class="next-btn" for="c32">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p33">
+			<div class = "back">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgIewU_4CO6UQm2vHGPCqpOik0pqnRAiTXw&usqp=CAU">
+				<label class = "back-btn" for="c33">Back</label>
+			</div>
+			<div class="front">
+				<h2>Pointe</h2>
+				<p>Ballet in the Streets</p>
+				<label class="next-btn" for="c33">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p34">
+			<div class = "back">
+				<img src="https://www.nakaiphotography.com/blog/wp-content/uploads/2019/08/21-26195-post/Chicago-Dance-photo-kids-dancing-NAKAI-Photography-005(pp_w768_h972).jpg">
+				<label class = "back-btn" for="c34">Back</label>
+			</div>
+			<div class="front">
+				<h2>Pose</h2>
+				<p>Cute Little Girl in a Pink Costume</p>
+				<label class="next-btn" for="c34">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p35">
+			<div class = "back">
+				<img src="https://www.nakaiphotography.com/blog/wp-content/uploads/2019/08/21-26195-post/Chicago-Dance-photo-kids-dancing-NAKAI-Photography-004.jpg">
+				<label class = "back-btn" for="c35">Back</label>
+			</div>
+			<div class="front">
+				<h2>Portrait</h2>
+				<p>On a Bridge</p>
+				<label class="next-btn" for="c35">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p36">
+			<div class = "back">
+				<h2>Dance Photography End </h2>
+				<label class = "back-btn" for="c36">Back</label>
+			</div>
+			<div class="front">
+				<h2>Split</h2>
+				<p>On a Bridge</p>
+				<label class="next-btn" for="c36">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 8-->
+  <div class="container">
+	<input type = "checkbox" id = "c43">
+	<input type = "checkbox" id = "c44">
+	<input type = "checkbox" id = "c45">
+	<input type = "checkbox" id = "c46">
+	<input type = "checkbox" id = "c47">
+	<input type = "checkbox" id = "c48">
+	<div class="cover">
+		<img src = "https://www.teenaagnel.com/wp-content/uploads/2019/12/food-photography-in-dubai.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p43">
+			<div class = "back">
+				<img src="https://www.adorama.com/alc/wp-content/uploads/2018/02/BBBURGER8-1024x683.jpg">
+				<label class = "back-btn" for="c43">Back</label>
+			</div>
+			<div class="front">
+				<h2>Food Photography</h2>
+				<p>Time to make you hungry</p>
+				<label class="next-btn" for="c43">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p44">
+			<div class = "back">
+				<img src="https://blog.sigmaphoto.com/wp-content/uploads/2019/07/cropped-pancakes-scaled.jpg">
+				<label class = "back-btn" for="c44">Back</label>
+			</div>
+			<div class="front">
+				<h2>Delicious Burgers</h2>
+				<p></p>
+				<label class="next-btn" for="c44">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p45">
+			<div class = "back">
+				<img src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2018/04/pizza_margherita.jpg?fit=700%2C467&ssl=1">
+				<label class = "back-btn" for="c45">Back</label>
+			</div>
+			<div class="front">
+				<h2>Mesmerizing Pancakes</h2>
+				<p></p>
+				<label class="next-btn" for="c45">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p46">
+			<div class = "back">
+				<img src="https://d25tv1xepz39hi.cloudfront.net/2018-01-29/files/food-photography_1735-t.jpg">
+				<label class = "back-btn" for="c46">Back</label>
+			</div>
+			<div class="front">
+				<h2>Yummy Pizza</h2>
+				<p></p>
+				<label class="next-btn" for="c46">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p47">
+			<div class = "back">
+				<img src="https://www.myclickmagazine.com/wp-content/uploads/2019/02/styling-food-photography-Hester-3.jpg">
+				<label class = "back-btn" for="c47">Back</label>
+			</div>
+			<div class="front">
+				<h2>Tasty Waffles</h2>
+				<p></p>
+				<label class="next-btn" for="c47">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p48">
+			<div class = "back">
+				<h2>Food Photography End </h2>
+				<label class = "back-btn" for="c48">Back</label>
+			</div>
+			<div class="front">
+				<h2>Sweet Cookies</h2>
+				<p></p>
+				<label class="next-btn" for="c48">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 10-->
+  <div class="container">
+	<input type = "checkbox" id = "c55">
+	<input type = "checkbox" id = "c56">
+	<input type = "checkbox" id = "c57">
+	<input type = "checkbox" id = "c58">
+	<input type = "checkbox" id = "c59">
+	<input type = "checkbox" id = "c60">
+	<div class="cover">
+		<img src = "https://images.ctfassets.net/u0haasspfa6q/1tkLicIFFstpQ1zWwgYqgC/390b01ed0b0486dae3beaca7af333049/emily_mesner_wildlife_photography">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p55">
+			<div class = "back">
+				<img src="https://i.insider.com/5bf29fe948eb1262ae77eaa2?width=1100&format=jpeg&auto=webp">
+				<label class = "back-btn" for="c55">Back</label>
+			</div>
+			<div class="front">
+				<h2>Animals</h2>
+				<p>Wildlife in their environment</p>
+				<label class="next-btn" for="c55">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p56">
+			<div class = "back">
+				<img src="https://expertphotography.com/wp-content/uploads/2018/10/wildlife-photography-cover2-1-1024x682.jpg">
+				<label class = "back-btn" for="c56">Back</label>
+			</div>
+			<div class="front">
+				<h2>Shocked Squirrel</h2>
+				<p></p>
+				<label class="next-btn" for="c56">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p57">
+			<div class = "back">
+				<img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+				<label class = "back-btn" for="c57">Back</label>
+			</div>
+			<div class="front">
+				<h2>Curious Squirrel</h2>
+				<p></p>
+				<label class="next-btn" for="c57">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p58">
+			<div class = "back">
+				<img src="https://www.noupe.com/wp-content/uploads/trans/wp-content/uploads/2010/01/animal-photography-snake.jpg">
+				<label class = "back-btn" for="c58">Back</label>
+			</div>
+			<div class="front">
+				<h2>Majestic Tiger</h2>
+				<p></p>
+				<label class="next-btn" for="c58">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p59">
+			<div class = "back">
+				<img src="https://s23527.pcdn.co/wp-content/uploads/2019/09/Peter-Haygarth_Laughing-Zebra_00003642.jpg.optimal.jpg">
+				<label class = "back-btn" for="c59">Back</label>
+			</div>
+			<div class="front">
+				<h2>Slithering Snake</h2>
+				<p></p>
+				<label class="next-btn" for="c59">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p60">
+			<div class = "back">
+				<h2>Animals End </h2>
+				<label class = "back-btn" for="c60">Back</label>
+			</div>
+			<div class="front">
+				<h2>Humorous Zebras</h2>
+				<p></p>
+				<label class="next-btn" for="c60">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  <!--book 12-->
+  <div class="container">
+  
+	<input type = "checkbox" id = "c67">
+	<input type = "checkbox" id = "c68">
+	<input type = "checkbox" id = "c69">
+	<input type = "checkbox" id = "c70">
+	<input type = "checkbox" id = "c71">
+	<input type = "checkbox" id = "c72">
+	<div class="cover">
+		<img src = "https://www.photographybylarj.com/img/s/v-10/p3305426675-4.jpg">
+	</div>
+	<div class = "page-container">
+		<!--page 1-->
+		<div class ="page" id = "p67">
+			<div class = "back">
+				<img src="https://lh3.googleusercontent.com/proxy/GMFrGagzjhztN58cIESkDBJMJXfcrs8s10J8QdAE3Pqn-SsmOqFh8pe4-UwtvV1jYUc_ZN57eEpIbtuoKR_hyCQqyG3BFvxGixSfBMoG8cUH0p4eR2QG7MaIyqkEvmWRnYgsMwj3Ig">
+				<label class = "back-btn" for="c67">Back</label>
+			</div>
+			<div class="front">
+				<h2>Birthday</h2>
+				<p>One more year under the belt</p>
+				<label class="next-btn" for="c67">Next</label>
+				</div>
+		</div>
+		<!-- page 2 -->
+		<div class ="page" id = "p68">
+			<div class = "back">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo12OmW2UtXS0rL6bzOjfSsXXtoYtNLawSFQ&usqp=CAU">
+				<label class = "back-btn" for="c68">Back</label>
+			</div>
+			<div class="front">
+				<h2>Sweet 16</h2>
+				<p></p>
+				<label class="next-btn" for="c68">Next</label>
+				</div>
+		</div>
+		<!-- page 3 -->
+		<div class ="page" id = "p69">
+			<div class = "back">
+				<img src="https://www.briliannaphotography.com/wp-content/uploads/2019/07/22-4321-post/First-Birthday-Photoshoot-Queens-NY-20.jpg">
+				<label class = "back-btn" for="c69">Back</label>
+			</div>
+			<div class="front">
+				<h2>First Birthday</h2>
+				<p></p>
+				<label class="next-btn" for="c69">Next</label>
+				</div>
+		</div>
+		<!-- page 4 -->
+		<div class ="page" id = "p70">
+			<div class = "back">
+				<img src="https://www.telegraph.co.uk/content/dam/news/2017/09/27/21427596_1691423167557184_6245370585282701979_o_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpg?imwidth=450">
+				<label class = "back-btn" for="c70">Back</label>
+			</div>
+			<div class="front">
+				<h2>Another First Birthday</h2>
+				<p></p>
+				<label class="next-btn" for="c70">Next</label>
+				</div>
+		</div>
+		<!-- page 5 -->
+		<div class ="page" id = "p71">
+			<div class = "back">
+				<img src="https://www.jencyk.com/wp-content/uploads/2019/10/Ideas-For-The-Best-30th-Birthday-Photoshoot-22.jpg">
+				<label class = "back-btn" for="c71">Back</label>
+			</div>
+			<div class="front">
+				<h2>98 and Still Going Strong</h2>
+				<p>heres a random portrait idk</p>
+				<label class="next-btn" for="c71">Next</label>
+				</div>
+		</div>
+		<!-- page 6 -->
+		<div class ="page" id = "p72">
+			<div class = "back">
+				<h2>Birthday Photography End </h2>
+				<label class = "back-btn" for="c72">Back</label>
+			</div>
+			<div class="front">
+				<h2>30</h2>
+				<p></p>
+				<label class="next-btn" for="c72">Next</label>
+				</div>
+		</div>
+	</div>
+  </div>
+  </div>
+  </fieldset>
+
+
+</body>
+</html>
