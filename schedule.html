@@ -1,55 +1,39 @@
-<!--Web Design Home Page-->
-<!--Shiqi Cheng and Rohan Jain-->
-<!--Code is from our knowledge unless otherwise specified by comments and images (other than our logo and favicon) are taken from public domain-->
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Appointment:</title>
-<link rel="icon" 
-      type="image/png" 
-      href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
-<style>
-body{
-	font-family: Verdana,Geneva,sans-serif; 
-	display:block;
-}
-h1{
-	color: #7fd4be;
-}
-input{
-	display:none;
-}
-img{
-	width: 100%;
-	height: 100%;
-}
-a:link {
-  color: #18302a;
-  background-color: transparent;
-  text-decoration: none;
-}
 
-a:visited {
-  color: #18302a;
-  background-color: transparent;
-  text-decoration: none;
-}
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">Rohan Cheng</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link active" href="about-me.html">About Me</a></li>
+					<li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link active" href="order.html">Order</a></li>
+					<li class="nav-item"><a class="nav-link active" href="schedule.html">Schedule A Meeting</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-a:hover {
-  color: #7fd4be;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
-<fieldset>
-  <legend><a href = "index.html"><img src = "logo.png" width="300" height="150"></img></a></legend>
-<h1>Schedule a Meeting</h1>
-<p>Schedule a meeting with me to talk about a future photoshoot, shooting locations, and anything else! Get to know me so we can have a perfect photoshoot experience!</p>
-<!--Calendly Inline Widget Code-->
-<div class="calendly-inline-widget" data-url="https://calendly.com/rohanchengphotography/15min" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
-</fieldset>
+	<!--Calendly Inline Widget Code-->
+	<div class="calendly-inline-widget" data-url="https://calendly.com/rohanchengphotography/15min" style="min-width:320px;height:630px;"></div>
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+	<!-- Calendly inline widget end -->
+
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
+
 </html>
