@@ -59,7 +59,7 @@ img{
 
 .container {
   background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
+  padding: 15px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
@@ -155,6 +155,25 @@ span.price {
 		  border-bottom-style: solid;
 		  border-left-style: solid;
 		}
+/* Responsive layout - makes a two column-layout instead of four columns */
+		@media (max-width: 800px) {
+		  .column {
+			flex: 50%;
+			max-width: 50%;
+		  }
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+		  .column {
+			flex: 100%;
+			max-width: 100%;
+		  }
+		}
+		td, th{
+			padding-left:20px;
+			padding-bottom: 5px;
+		}
 
 </style>
 </head>
@@ -176,39 +195,38 @@ span.price {
 </div>
 
 
-<img id = "image" width = "800" height = "450">
+<img id = "image" width = "600" height = "337.5">
 <div>
-	<div style = "margin-left: 15px;">
-	<h2 style = "text-align:left;">Checkout</h2>
+	<div style = "margin-left: 50px;">
+	<h2 style = "text-align:left;">Checkout:</h2>
 		<h3 style = "text-align:left;">Review Your Order:</h3>
-
 		<table>
 			<thead>
 				<tr>
-					<th scope="col" colspan = "5">Item</th>
-					<th scope="col" colspan = "5" >Price</th>
+					<th scope="col" >Item</th>
+					<th scope="col" >Price</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<tr>
-					<th id = "package" scope="row" colspan = "5" >which package</th>
-					<td id = "packagePrice" colspan = "5" >price</td>
+					<th id = "package" scope="row">which package</th>
+					<td id = "packagePrice" >price</td>
 				</tr>
 
 				<tr id = "editingRow">
-					<th id = "editing" scope="row" colspan = "5" >Editing</th>
-					<td id = "editingPrice" colspan = "5" >price</td>
+					<th id = "editing" scope="row" >Editing</th>
+					<td id = "editingPrice"  >price</td>
 				</tr>
 
 				<tr id = "highlightRow">
-					<th id = "highlight" scope="row" colspan = "5">highlight</th>
-					<td id = "highlightPrice" colspan = "5" >$0.00</td>
+					<th id = "highlight" scope="row" >highlight</th>
+					<td id = "highlightPrice" >$0.00</td>
 				</tr>
 
 				<tr>
-					<th scope="row" colspan = "5"><strong>Total</strong></th>
-					<td id = "totalPrice" colspan = "5" ><strong>$38.33</strong></td>
+					<th scope="row" ><strong>Total</strong></th>
+					<td id = "totalPrice" ><strong>$38.33</strong></td>
 				</tr>
 			</tbody>
 		</table>
