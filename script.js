@@ -13,13 +13,13 @@ function loadCheckout(){
 	var packagePrice = getParameterByName('packages');
 	var packageChosen = "";
 	switch(packagePrice){
-		case '50':
+		case '30':
 			packageChosen = "Package 1";
-		case '60':
+		case '40':
 			packageChosen = "Package 2";
-		case '80':
+		case '50':
 			packageChosen = "Package 3";
-		case '100':
+		case '60':
 			packageChosen = "Package 4";
 		
 	}
