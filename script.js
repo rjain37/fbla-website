@@ -1,3 +1,8 @@
+<!--Web Design Home Page-->
+<!--Shiqi Cheng and Rohan Jain-->
+<!--Code is from our knowledge unless otherwise specified by comments and images (other than our logo and favicon) are taken from public domain-->
+
+<!--Javascript for the order and checkout pages-->
 function goToOrder(chosenImage){
 	document.getElementById("catalog").style.display = "none";
 	document.getElementById("selectedImage").src = chosenImage;
@@ -54,6 +59,7 @@ function loadCheckout(){
 	var totalPrice = parseInt(packagePrice) + parseInt(editPrice) + parseInt(highlightPrice);
 	document.getElementById("totalPrice").innerHTML = "$" + totalPrice;
 }
+<!--Source: https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript-->
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -61,4 +67,4 @@ function getParameterByName(name, url = window.location.href) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}//source: https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+}
