@@ -1,4 +1,4 @@
-<!--Web Design About Me Page-->
+<!--Web Design Thanks Page-->
 <!--Shiqi Cheng and Rohan Jain-->
 <!--Code is from our knowledge unless otherwise specified by comments and images (other than our logo and favicon) are taken from public domain-->
 <!DOCTYPE html>
@@ -7,6 +7,7 @@
 <link rel="icon" 
       type="image/png" 
       href="favicon.png">
+	  <meta charset="UTF-8">
 <title>Thank you!</title>
 <style>
 body{
@@ -14,13 +15,85 @@ body{
 	display:block;
 	text-align:center;
 }
+.button {
+		  background-color: rgb(24,48,42);
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    align: center;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:center;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:48px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+textarea{
+	background-color: #f2f2f2;
+  padding: 15px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 800px;
+  font-family: Verdana,Geneva,sans-serif; 
+}
 </style>
 </head>
 <body>
 <fieldset>
-	<legend><a href = "index.html"><img src = "logo.png" width="300" height="150"></img></a></legend>
+	<legend><a href = "home.html"><img src = "logo.png" width="300" height="150"></img></a></legend><br>
 	<h2>Thank you for ordering my service! See you soon!</h2>
-	<a href="index.html">Go Back</a>
+	<p>Also, please take a minute to rate my service and website. This will help me evaluate what I need to improve on.</p><br><br>
+<div class="rate">
+    <input type="radio" id="star5" name="rate" value="1" />
+    <label for="star5" title="text"></label>
+    <input type="radio" id="star4" name="rate" value="2" />
+    <label for="star4" title="text"></label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text"></label>
+    <input type="radio" id="star2" name="rate" value="4" />
+    <label for="star2" title="text"></label>
+    <input type="radio" id="star1" name="rate" value="5" />
+    <label for="star1" title="text"></label>
+  </div><br><br>
+  <textarea name="comment" form="usrform">Questions and Comments?</textarea><br><br>
+
+  <a href = "index.html"><button class="button">Submit and Return Home</button></a><br><br>
+  	
 </fieldset>
+
 </body>
 </html>
