@@ -57,7 +57,7 @@ function loadCheckout(){
 	}
 	//finding total price
 	var totalPrice = parseInt(packagePrice) + parseInt(editPrice) + parseInt(highlightPrice);
-	document.getElementById("totalPrice").innerHTML = "$" + totalPrice;
+	document.getElementById("totalPrice").innerHTML = "<strong>$" + totalPrice + "</strong>";
 }
 //Source: https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 function getParameterByName(name, url = window.location.href) {
